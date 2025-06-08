@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ➡️Next.js Learning⬅️
 
-## Getting Started
+## Content📃
 
-First, run the development server:
+| Index | Subject                                                                                                           |
+| ----- | ----------------------------------------------------------------------------------------------------------------- |
+| 1     | Project Structure                                                                                                 |
+| 2     | Routing, and Nested Routes                                                                                        |
+| 3     | Dynamic, Nested Dynamic Routes, Linking and Navigation                                                            |
+| 4     | Params, SearchUrlParams, Route Segments, Catch all Segments                                                       |
+| 5     | RootLayout, Layouts, Pages, Not-Found Page, Error Page, Server and Client Components                              |
+| 6     | Nested Layouts, Multiple RootLayouts                                                                              |
+| 7     | File Colocation, Private Folder, and Route Group                                                                  |
+| 8     | Routing Metadata, Title Metadata                                                                                  |
+| 9     | Templates, Loading UI, Suspence SSR                                                                               |
+| 10    | Errors, Global Errors, Nested Layout, Routes Errors                                                               |
+| 11    | Parallel, Unmatched, Conditional, Intercepting, Parallel-Intercepting Routes                                      |
+| 12    | API, Handling GET, POST, PATCH, DELETE Requests                                                                   |
+| 13    | Dynamic Route Handlers, Url QueryParameters                                                                       |
+| 14    | Headers, Cookies in Route Handlers                                                                                |
+| 15    | Middlewares, Caching, Redirects                                                                                   |
+| 16    | Rendering, SSR (server side rendering), CSR (client side rendering), SSG (static site generation), ISR, Streaming |
+| 17    | Data Fetching in Client and Server Components                                                                     |
+| 18    | Sequential and Parallel Data Fetching, Fetching Data From Database, Data Mutations                                |
+| 19    | Forms with Server Actions, Form Validation                                                                        |
+| 20    | Update Server Action, Delete Server Action, Optimistic Updates                                                    |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+├───app
+│ ├───about
+│ │ └───page.tsx
+│ ├───blog
+│ │ ├───first
+│ │ │ └───page.tsx
+│ │ ├───page
+│ │ └───second
+│ │ └───page.tsx
+│ ├───dashboard
+│ │ └───page.tsx
+│ ├───docs
+│ │ ├───[...slug]
+│ │ │ └───page.tsx
+│ │ └───[[...slug]]
+│ │ └───page.tsx
+│ ├───favicon.ico
+│ │ └───route
+│ ├───page
+│ ├───products
+│ │ ├───page.tsx
+│ │ └───[productId]
+│ │ ├───page.tsx
+│ │ └───reviews
+│ │ ├───page.tsx
+│ │ ├───[reviewId]
+│ │ │ └───page.tsx
+│ │ └───[reviewsId]
+│ │ └───page.tsx
+│ ├───profile
+│ │ └───page.tsx
+│ └───_not-found
+│ └───page.tsx
