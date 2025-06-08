@@ -24,37 +24,3 @@
 | 18    | Sequential and Parallel Data Fetching, Fetching Data From Database, Data Mutations                                |
 | 19    | Forms with Server Actions, Form Validation                                                                        |
 | 20    | Update Server Action, Delete Server Action, Optimistic Updates                                                    |
-
-├───app
-│ ├───about
-│ │ └───page.tsx
-│ ├───blog
-│ │ ├───first
-│ │ │ └───page.tsx
-│ │ ├───page
-│ │ └───second
-│ │ └───page.tsx
-│ ├───dashboard
-│ │ └───page.tsx
-│ ├───docs
-│ │ ├───[...slug]
-│ │ │ └───page.tsx
-│ │ └───[[...slug]]
-│ │ └───page.tsx
-│ ├───favicon.ico
-│ │ └───route
-│ ├───page
-│ ├───products
-│ │ ├───page.tsx
-│ │ └───[productId]
-│ │ ├───page.tsx
-│ │ └───reviews
-│ │ ├───page.tsx
-│ │ ├───[reviewId]
-│ │ │ └───page.tsx
-│ │ └───[reviewsId]
-│ │ └───page.tsx
-│ ├───profile
-│ │ └───page.tsx
-│ └───_not-found
-│ └───page.tsx
