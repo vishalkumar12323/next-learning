@@ -1,26 +1,64 @@
-# ➡️Next.js Learning⬅️
+# Task Manager with Google Authentication
 
-## Content📃
+A simple Task Manager application built with **Next.js (App Router)** for the frontend and an **external Node.js API** for backend operations.  
+The app supports **Google OAuth 2.0 login** and displays:
 
-| Index | Subject                                                                                                           |
-| ----- | ----------------------------------------------------------------------------------------------------------------- |
-| 1     | Project Structure                                                                                                 |
-| 2     | Routing, and Nested Routes                                                                                        |
-| 3     | Dynamic, Nested Dynamic Routes, Linking and Navigation                                                            |
-| 4     | Params, SearchUrlParams, Route Segments, Catch all Segments                                                       |
-| 5     | RootLayout, Layouts, Pages, Not-Found Page, Error Page, Server and Client Components                              |
-| 6     | Nested Layouts, Multiple RootLayouts                                                                              |
-| 7     | File Colocation, Private Folder, and Route Group                                                                  |
-| 8     | Routing Metadata, Title Metadata                                                                                  |
-| 9     | Templates, Loading UI, Suspence SSR                                                                               |
-| 10    | Errors, Global Errors, Nested Layout, Routes Errors                                                               |
-| 11    | Parallel, Unmatched, Conditional, Intercepting, Parallel-Intercepting Routes                                      |
-| 12    | API, Handling GET, POST, PATCH, DELETE Requests                                                                   |
-| 13    | Dynamic Route Handlers, Url QueryParameters                                                                       |
-| 14    | Headers, Cookies in Route Handlers                                                                                |
-| 15    | Middlewares, Caching, Redirects                                                                                   |
-| 16    | Rendering, SSR (server side rendering), CSR (client side rendering), SSG (static site generation), ISR, Streaming |
-| 17    | Data Fetching in Client and Server Components                                                                     |
-| 18    | Sequential and Parallel Data Fetching, Fetching Data From Database, Data Mutations                                |
-| 19    | Forms with Server Actions, Form Validation                                                                        |
-| 20    | Update Server Action, Delete Server Action, Optimistic Updates                                                    |
+- Public demo tasks for non-logged-in users
+- User-specific tasks for authenticated users
+
+---
+
+## 🚀 Features
+
+- **Google Authentication** (OAuth 2.0)
+- **Task Management** (Add, View, Delete tasks)
+- **Public Tasks View** for first-time visitors or non-logged-in users
+- **Secure Cookies** for storing authentication tokens
+- **External Node.js API integration** with Next.js API routes
+- **MongoDB User Collection** for storing user profiles
+
+---
+
+## 🛠 Tech Stack
+
+### **Frontend**
+
+- [Next.js 14+ (App Router)](https://nextjs.org/docs/app)
+- TypeScript
+- Tailwind CSS
+
+### **Backend**
+
+- Node.js + Express.js
+- MongoDB + Mongoose
+- Google OAuth 2.0 (`passport-google-oauth20` or `googleapis`)
+- JWT-based authentication
+
+---
+
+## 📂 Project Structure
+
+```
+├───app
+│ ├───add-task
+│ ├───api
+│ │ ├───logout
+│ │ ├───tasks
+│ │ │ ├───sample-tasks
+│ │ │ └───[id]
+│ │ └───user
+│ ├───edit-task
+│ │ └───[id]
+│ ├───home
+│ └───lib
+├───components
+└───public
+├───middleware.ts
+├───next.config.ts
+├───.gitignore
+├───tailwind.config.js
+├───postcss.config.js
+├───pnpm-lock.yaml
+├───package.json
+└───tsconfig.json
+```
