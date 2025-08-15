@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
+import { external_api_url } from "@/app/lib/api";
 
 export default function GoogleLoginButton() {
   const loginWithGoogle = () => {
-    window.location.href = "http://localhost:9000/api/auth/google";
+    window.location.href = `${external_api_url}/auth/google`;
   };
 
   return (
