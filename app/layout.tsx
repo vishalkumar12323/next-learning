@@ -1,8 +1,10 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Next.js Learning",
-  description: "This is a learning project for next.js",
+  title: "Task-Manager",
+  description:
+    "Task manager provide you to create, edit, delete your all task that you do in your day.",
 };
 
 export default function RootLayout({
@@ -13,34 +15,11 @@ export default function RootLayout({
   return (
     <html>
       <body
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          minHeight: "100vh",
-        }}
         suppressHydrationWarning
+        className="flex  flex-col h-screen w-full bg-slate-950 text-white"
       >
-        <header
-          style={{
-            padding: "1rem",
-            backgroundColor: "lightblue",
-            color: "black",
-          }}
-        >
-          <h1>Navbar</h1>
-        </header>
+        <Navbar />
         {children}
-        <footer
-          style={{
-            padding: "1rem",
-            backgroundColor: "lightblue",
-            color: "black",
-            marginTop: "auto",
-          }}
-        >
-          <p>Footer</p>
-        </footer>
       </body>
     </html>
   );
